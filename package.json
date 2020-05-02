@@ -21,7 +21,7 @@
     "@types/node": "^13.13.4",
     "@types/react": "^16.9.34",
     "husky": ">=4",
-    "jest": "^25.5.2",
+    "jest": "^25.5.3",
     "lint-staged": ">=10",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1",
