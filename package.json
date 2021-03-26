@@ -1,40 +1,40 @@
 {
-  "name": "react-resettable-state",
-  "version": "1.0.0",
-  "license": "MIT",
-  "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w",
-    "format:check": "prettier --check ./src ./Readme.md",
-    "format:write": "prettier --write ./src ./Readme.md",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "prepare": "husky install"
-  },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "dependencies": {
-    "react": "^17.0.1"
-  },
-  "devDependencies": {
-    "@testing-library/react-hooks": "^5.0.3",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.22",
-    "@types/react": "^17.0.0",
-    "husky": ">=4",
-    "jest": "^25.5.4",
-    "lint-staged": ">=10",
-    "prettier": "^2.2.1",
-    "react-test-renderer": "^17.0.1",
-    "ts-jest": "^25.5.1",
-    "typescript": "^3.9.7"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "react-resettable-state",
+    "version": "1.0.1",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "format:check": "prettier --check ./src ./Readme.md",
+        "format:write": "prettier --write ./src ./Readme.md",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "prepare": "husky install"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "dependencies": {
+        "react": "^17.0.1"
+    },
+    "devDependencies": {
+        "@testing-library/react-hooks": "^5.0.3",
+        "@types/jest": "^26.0.20",
+        "@types/node": "^14.14.22",
+        "@types/react": "^17.0.0",
+        "husky": ">=4",
+        "jest": "^25.5.4",
+        "lint-staged": ">=10",
+        "prettier": "^2.2.1",
+        "react-test-renderer": "^17.0.1",
+        "ts-jest": "^25.5.1",
+        "typescript": "^3.9.7"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{ts,md}": "prettier --write"
     }
-  },
-  "lint-staged": {
-    "*.{ts,md}": "prettier --write"
-  }
 }
