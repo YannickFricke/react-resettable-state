@@ -8,7 +8,8 @@
     "format:check": "prettier --check ./src ./Readme.md",
     "format:write": "prettier --write ./src ./Readme.md",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
