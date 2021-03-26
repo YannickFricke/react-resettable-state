@@ -18,7 +18,11 @@ Now you want to see this small package in action? No problem!
 2. Import the package
 
 ```js
+// JavaScript
 const { useResettableState } = require('react-resettable-state');
+
+// TypeScript
+import { useResettableState } from 'react-resettable-state';
 ```
 
 3. Use the package
@@ -46,8 +50,8 @@ const App = () => {
 Here are some examples which are written in TypeScript.
 If you want to use JavaScript instead, look in the section above.
 
-- [Counter](https://codesandbox.io/s/react-resettable-state-counter-example-knun5)
-- [Form data](https://codesandbox.io/s/react-resettable-state-form-example-sk1dw)
+-   [Counter](https://codesandbox.io/s/react-resettable-state-counter-example-knun5)
+-   [Form data](https://codesandbox.io/s/react-resettable-state-form-example-sk1dw)
 
 ## Typings?
 
