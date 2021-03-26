@@ -1,6 +1,5 @@
 import { useResettableState } from '..';
-import { renderHook, act, HookResult } from '@testing-library/react-hooks';
-import { SetStateAction } from 'react';
+import { renderHook, act } from '@testing-library/react-hooks';
 
 describe('useResettableState', () => {
     it('should return the initial state', () => {
@@ -16,28 +15,24 @@ describe('useResettableState', () => {
     it('should reset the state', () => {
         const { result } = renderHook(() => useResettableState(0));
 
-        const [, resetState, setState] = result.current;
+        let [state, resetState, setState] = result.current;
 
-        expect(getCurrentState(result)).toBe(0);
+        expect(state).toBe(0);
 
         act(() => {
             setState(1);
         });
 
-        expect(getCurrentState(result)).toBe(1);
+        state = result.current[0];
+
+        expect(state).toBe(1);
 
         act(() => {
             resetState();
         });
 
-        expect(getCurrentState(result)).toBe(0);
-    });
+        state = result.current[0];
 
-    const getCurrentState = (
-        result: HookResult<
-            [number, () => void, React.Dispatch<SetStateAction<number>>]
-        >
-    ) => {
-        return result.current[0];
-    };
+        expect(state).toBe(0);
+    });
 });
