@@ -23,7 +23,7 @@
         "@types/react": "^17.0.5",
         "husky": ">=6",
         "jest": "^25.5.4",
-        "lint-staged": ">=10",
+        "lint-staged": ">=11",
         "prettier": "^2.3.0",
         "react-test-renderer": "^17.0.1",
         "ts-jest": "^25.5.1",
