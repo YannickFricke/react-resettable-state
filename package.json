@@ -19,7 +19,7 @@
     "devDependencies": {
         "@testing-library/react-hooks": "^6.0.0",
         "@types/jest": "^26.0.23",
-        "@types/node": "^15.3.1",
+        "@types/node": "^15.6.0",
         "@types/react": "^17.0.6",
         "husky": ">=6",
         "jest": "^25.5.4",
