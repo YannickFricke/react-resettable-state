@@ -5,7 +5,10 @@ export const useResettableState = <T>(
 ): [T, () => void, React.Dispatch<SetStateAction<T>>] => {
     const [state, setState] = useState<T>(initialState);
 
-    const resetState = useCallback(() => setState(initialState), [initialState])
+    const resetState = useCallback(
+        () => setState(initialState),
+        [initialState]
+    );
 
     return [state, resetState, setState];
 };
